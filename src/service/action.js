@@ -59,7 +59,6 @@ export const loginUser = (data) => async(dispatch) => {
             }
         })
         result = res;
-        console.log("action... ",result);
         return result;
     }
     catch (error) {

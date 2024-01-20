@@ -71,7 +71,7 @@ const Userlist = () => {
             }
           </Box>
         </Box>
-        {check && <CrudModal title={'Are you sure want to Delete Data ?'} returnResult={modalResult} />}
+        {check && <CrudModal title={'Are you sure to Delete Data ?'} returnResult={modalResult} />}
       </Box>
     </>
   )

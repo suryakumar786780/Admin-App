@@ -72,7 +72,6 @@ const Register = () => {
             (async () => {
                 setIsLoading(true)
                 const response = await dispatch(registerUser(values));
-                console.log(response);
                 if (response === "Admin created successfully") {
                     setIsLoading(false);
                     setErr({ err: false, errValue: "", })

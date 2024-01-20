@@ -202,7 +202,7 @@ const AddUser = () => {
                         >
                             SUBMIT
                         </Button>
-                        {check && <CrudModal title={`${useP.id ? "Are you sure want to Edit Data ?" : "Are you want to Add more Data ?"}`} returnResult={modalResult} />}
+                        {check && <CrudModal title={`${useP.id ? "Are you sure to Edit Data ?" : "Are you want to Add more Data ?"}`} returnResult={modalResult} />}
 
                         <Box sx={{ width: { xs: "100%" } }} className='fw-bold text-success mt-2 text-center'>{result ? `User ${useP.id ? "Edited" : "Added"} Successfully` : ""}</Box>
                     </form>

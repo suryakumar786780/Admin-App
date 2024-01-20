@@ -173,7 +173,7 @@ const Maindrawer = () => {
                 <Divider />
                 <List>
                     {['Dashboard', 'User List'].map((text, index) => (
-                        <Link to={`${navigate[index]}`} className='text-decoration-none text-dark'>
+                        <Link to={`${navigate[index]}`} className='text-decoration-none text-dark' key={index}>
                             <ListItem key={text} disablePadding sx={{ display: 'block', backgroundColor: navigate[index] === loc ? "#F28F80" : "" }}>
                                 <ListItemButton
                                     sx={{
@@ -231,7 +231,7 @@ const Maindrawer = () => {
                     ))}
                 </List>
             </Drawer>
-            {check && <CrudModal title={'Are you sure want to Logout ?'} returnResult={modalResult} />}
+            {check && <CrudModal title={'Are you sure to Logout ?'} returnResult={modalResult} />}
             {
                 loc === '/dashboard' ? <Dashboard /> : <Userlist/>
             }

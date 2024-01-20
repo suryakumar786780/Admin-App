@@ -61,7 +61,6 @@ const Login = () => {
             (async () => {
                 setIsLoading(true)
                 const response = await dispatch(loginUser(values))
-                console.log(response);
                 if (response.status === 200) {
                     setIsLoading(false);
                     setErr({ err: false, errValue: '' });
